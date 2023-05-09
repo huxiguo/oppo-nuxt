@@ -10,6 +10,7 @@
   },
   "devDependencies": {
     "@types/node": "^18",
+    "@unocss/nuxt": "^0.51.12",
     "cz-git": "^1.6.1",
     "nuxt": "^3.4.3"
   },
@@ -17,5 +18,13 @@
     "commitizen": {
       "path": "node_modules/cz-git"
     }
+  },
+  "dependencies": {
+    "@iconify-json/carbon": "^1.1.16",
+    "@nuxt/devtools": "^0.4.6",
+    "@unocss/reset": "^0.51.12",
+    "lru-cache": "^9.1.1",
+    "normalize.css": "^8.0.1",
+    "sass": "^1.62.1"
   }
 }
