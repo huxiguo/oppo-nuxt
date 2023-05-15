@@ -1,7 +1,7 @@
 $contentWidth: 1248px; // 内容宽
 
 $appHeaderHeight: 36px; // app header 的高度
-$navBarHeight: 84px; // 导航栏高 68 + 16
+$navBarHeight: 84px; // 导航栏高 68 + 16怎么定义unocss 的scss变
 
 $logoWidth: 250px; // logo
 $logoHeight: 50px;
@@ -33,44 +33,44 @@ $bgGrayColor: #fafafa;
 
 // 背景精灵图
 @mixin bgSpride() {
-  background-image: url("~/assets/images/spride.png");
-  background-repeat: no-repeat;
+	background-image: url('~/assets/images/spride.png');
+	background-repeat: no-repeat;
 }
 
 // 水平居中的flex
 @mixin normalFlex($direction: row, $content: space-between) {
-  display: flex;
-  flex-direction: $direction;
-  justify-content: $content;
+	display: flex;
+	flex-direction: $direction;
+	justify-content: $content;
 }
 
 @mixin elementSticky($top: 0px, $z: 100) {
-  position: sticky;
-  top: $top;
-  z-index: $z;
+	position: sticky;
+	top: $top;
+	z-index: $z;
 }
 
 @mixin hoverEffect() {
-  transition: all 0.2s linear;
-  transform: translateY(-3px);
-  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 10%);
+	transition: all 0.2s linear;
+	transform: translateY(-3px);
+	box-shadow: 0 4px 8px 0 rgb(0 0 0 / 10%);
 }
 // 调试用
 @mixin border($color: red) {
-  border: 1px solid $color;
+	border: 1px solid $color;
 }
 
 @mixin textEllipsis() {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
 @mixin textMultiEllipsis($line: 2) {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: $line; //多行在这里修改数字即可
-  overflow: hidden;
-  /* autoprefixer: ignore next */
-  -webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: $line; //多行在这里修改数字即可
+	overflow: hidden;
+	/* autoprefixer: ignore next */
+	-webkit-box-orient: vertical;
 }

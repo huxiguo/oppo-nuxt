@@ -1,18 +1,12 @@
 <script setup lang="ts">
 import { storeToRefs } from 'pinia'
-import { useHomeStore } from '~/store/home'
-import type { ICategorys } from '~/store/type'
-
-const homeStore = useHomeStore()
-const { banners, categorys } = storeToRefs(homeStore)
-// 子组件点击事件
+import { useIntelligentStore } from '@/store/intelligent'
+import { ICategorys } from '~/store/type'
+const intelligentStore = useIntelligentStore()
+intelligentStore.fetchHomeInfoData('intelligent')
+const { banners, categorys } = storeToRefs(intelligentStore)
 const handleTabCategoryItemClick = (item: ICategorys) => {
-	return navigateTo({
-		path: '/detail',
-		query: {
-			type: item.type
-		}
-	})
+	console.log(item)
 }
 </script>
 
@@ -25,7 +19,10 @@ const handleTabCategoryItemClick = (item: ICategorys) => {
 				@item-click="handleTabCategoryItemClick"
 			/>
 			<template v-for="item in categorys" :key="item.id">
-				<SectionCategory :category="item" />
+				<SectionCategory
+					:category="item"
+					v-if="item.productDetailss && item.productDetailss.length"
+				/>
 			</template>
 		</div>
 	</div>

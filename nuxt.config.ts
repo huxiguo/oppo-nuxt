@@ -5,7 +5,13 @@ export default defineNuxtConfig({
 		'@unocss/reset/normalize.css',
 		'@/assets/css/global.scss'
 	],
-	modules: ['@unocss/nuxt', '@nuxt/devtools'],
+	modules: [
+		'@unocss/nuxt',
+		'@nuxt/devtools',
+		'@pinia/nuxt',
+		'@element-plus/nuxt',
+		'@vueuse/nuxt'
+	],
 	vite: {
 		css: {
 			preprocessorOptions: {

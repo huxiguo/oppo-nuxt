@@ -1,11 +1,4 @@
-<script setup lang="ts">
-interface IProps {
-	title: string
-}
-const props = withDefaults(defineProps<IProps>(), {
-	title: ''
-})
-</script>
+<script setup lang="ts"></script>
 
 <template>
 	<div class="bg-#000 h-36px sticky top-0 z-100">
