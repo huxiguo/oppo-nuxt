@@ -64,7 +64,6 @@
 
 				<div class="bottom-item">
 					<img class="police" src="~/assets/images/police.png" alt="police" />
-					<a href="#">粤公安网备 44190002001939号</a>
 				</div>
 			</div>
 		</div>
