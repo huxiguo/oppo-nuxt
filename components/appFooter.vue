@@ -55,7 +55,6 @@
 			</div>
 			<div class="footer-bottom">
 				<div class="bottom-item">
-					<a href=""> © 2004-2022 OPPO 版权所有粤ICP备14056724号</a>
 					<span>|</span> <a href="">隐私政策</a><span>|</span>
 					<a href="">用户使用协议</a><span>|</span> <a href="">资质证照</a
 					><span>|</span>
